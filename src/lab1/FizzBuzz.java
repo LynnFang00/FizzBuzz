@@ -36,15 +36,16 @@ class FizzBuzz {
      */
     public static void main(String[] args){
         int i = 1;
-        boolean divisibleBy3 = i % 3 == 0;
-        boolean divisibleBy5 = i % 5 == 0;
-        while (i <= 100){
-            i = doFizzBuzz(divisibleBy3, divisibleBy5, i);
+        while (i < 100){
+            doFizzBuzz(i);
+            i++;
         }
-
     }
 
-    private static int doFizzBuzz(boolean divisibleBy3, boolean divisibleBy5, int i) {
+    public static int doFizzBuzz(int i) {
+        boolean divisibleBy3 = i % 3 == 0;
+        boolean divisibleBy5 = i % 5 == 0;
+
         if (divisibleBy3 && divisibleBy5) {
 
             System.out.println("Fizz Buzz");
@@ -62,7 +63,6 @@ class FizzBuzz {
             System.out.println(i);
 
         }
-        i++;
-        return i;
+        return i + 1;
     }
 }
