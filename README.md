@@ -523,7 +523,7 @@ Here is one more small coding problem similar to the Multiples problem for extra
 
 Starting with a number n, if n is even divide it by 2. If n is odd, subtract 1. Repeat.
 
-For example, if you start with n = 2, the answer is 2.
+For example, if you start with n = 2, the answer is 0.
 
 > Details: 2 (even, divide by 2) --> 1 (odd, subtract 1) --> 0.
 
